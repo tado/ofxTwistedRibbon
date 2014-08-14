@@ -1,7 +1,7 @@
 ofxTwistedRibbon
 ================
 
-Draw ribbon using ofxVboMesh for openFrameworks.
+Draw ribbon using ofVboMesh for openFrameworks.
 
 ![screen](screenshot.jpg)
 
