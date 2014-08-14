@@ -37,7 +37,7 @@ void ofxTwistedRibbon::draw(){
         ofVec3f unitDirection = direction.normalized();
         
         ofVec3f toTheLeft = unitDirection.getRotated(90, ofVec3f(0, 1, 1));
-        ofVec3f toTheRight = unitDirection.getRotated(0, ofVec3f(0, 1, 1));
+        ofVec3f toTheRight = unitDirection.getRotated(-90, ofVec3f(0, 1, 1));
         
         ofVec3f leftPoint = thisPoint+toTheLeft * thickness;
         ofVec3f rightPoint = thisPoint+toTheRight * thickness;
