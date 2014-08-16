@@ -16,15 +16,27 @@ ofxTwistedRibbon::ofxTwistedRibbon(int _length, ofColor _color, float _thickness
 
 void ofxTwistedRibbon::update(ofVec3f position){
     points.push_back(position);
+    colors.push_back(color);
     if (points.size() > length) {
         points.pop_front();
+        colors.pop_front();
+    }
+
+}
+
+void ofxTwistedRibbon::update(ofVec3f position, ofColor _color){
+    points.push_back(position);
+    colors.push_back(_color);
+    if (points.size() > length) {
+        points.pop_front();
+        colors.pop_front();
     }
 }
 
 void ofxTwistedRibbon::draw(){
     ofEnableDepthTest();
     
-    ofSetColor(color);
+    ofSetColor(255);
     
     ofVboMesh mesh;
     mesh.setMode(OF_PRIMITIVE_TRIANGLE_STRIP);
@@ -42,8 +54,13 @@ void ofxTwistedRibbon::draw(){
         ofVec3f leftPoint = thisPoint+toTheLeft * thickness;
         ofVec3f rightPoint = thisPoint+toTheRight * thickness;
         
+        mesh.addColor(ofFloatColor(colors[i]));
         mesh.addVertex(ofVec3f(leftPoint.x, leftPoint.y, leftPoint.z));
+        mesh.addColor(ofFloatColor(colors[i].r / 256.0,
+                                   colors[i].g / 256.0,
+                                   colors[i].b / 256.0));
         mesh.addVertex(ofVec3f(rightPoint.x, rightPoint.y, rightPoint.z));
+        int n = mesh.getNumColors();
     }
     
     mesh.draw();
