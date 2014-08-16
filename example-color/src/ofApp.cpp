@@ -14,7 +14,7 @@ void ofApp::update(){
     position.x  = cos(ofGetElapsedTimef() * speed) * radius;
     position.y  = sin(ofGetElapsedTimef() * speed * 1.3) * radius;
     ofColor color;
-    int hue = int(ofGetElapsedTimef() * 100) % 255;
+    int hue = int(ofGetElapsedTimef() * 10) % 255;
     color.setHsb(hue, 120, 220);
     ribbon->update(position, color);
 }
@@ -24,7 +24,7 @@ void ofApp::draw(){
     ofBackgroundGradient(ofColor(127), ofColor(0), OF_GRADIENT_CIRCULAR);
     
     cam.begin();
-    ofRotate(ofGetElapsedTimef() * 5, 1, 1, 0);
+    ofRotate(ofGetElapsedTimef() * 10, 1, 1, 0);
     ribbon->draw();
     cam.end();
 }
