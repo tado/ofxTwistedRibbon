@@ -15,7 +15,7 @@ void ofApp::update(){
     position.y  = sin(ofGetElapsedTimef() * speed * 1.3) * radius;
     ofColor color;
     int hue = int(ofGetElapsedTimef() * 100) % 255;
-    color.setHsb(hue, 120, 160);
+    color.setHsb(hue, 120, 220);
     ribbon->update(position, color);
 }
 
