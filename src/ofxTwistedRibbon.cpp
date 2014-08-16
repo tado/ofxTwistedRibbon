@@ -53,9 +53,9 @@ void ofxTwistedRibbon::draw(){
         
         ofVec3f leftPoint = thisPoint+toTheLeft * thickness;
         ofVec3f rightPoint = thisPoint+toTheRight * thickness;
-        ofFloatColor fcolor = ofFloatColor(colors[i].r / 256.0,
-                                           colors[i].g / 256.0,
-                                           colors[i].b / 256.0);
+        ofFloatColor fcolor = ofFloatColor(colors[i].r / 255.0,
+                                           colors[i].g / 255.0,
+                                           colors[i].b / 255.0);
         mesh.addColor(fcolor);
         mesh.addVertex(ofVec3f(leftPoint.x, leftPoint.y, leftPoint.z));
         mesh.addColor(fcolor);
