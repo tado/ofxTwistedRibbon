@@ -5,19 +5,19 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>F98C9977-21C5-4E09-8EF8-F757C0FF3594</string>
+	<string>756CFD37-1005-45B5-B0C2-CAD3F481D43C</string>
 	<key>IDESourceControlProjectName</key>
 	<string>example</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>77A83FFB-3351-4EC6-8687-193C53161A90</key>
+		<key>01AA7A22-7DC5-439B-8573-61E30AE08517</key>
 		<string>https://github.com/tado/ofxTwistedRibbon.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>example/example.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>77A83FFB-3351-4EC6-8687-193C53161A90</key>
+		<key>01AA7A22-7DC5-439B-8573-61E30AE08517</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,14 +25,14 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>77A83FFB-3351-4EC6-8687-193C53161A90</string>
+	<string>01AA7A22-7DC5-439B-8573-61E30AE08517</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>77A83FFB-3351-4EC6-8687-193C53161A90</string>
+			<string>01AA7A22-7DC5-439B-8573-61E30AE08517</string>
 			<key>IDESourceControlWCCName</key>
 			<string>ofxTwistedRibbon</string>
 		</dict>
